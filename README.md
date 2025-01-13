@@ -1,2 +1,4 @@
 # pipeline-data-engineering
-Reference template for DE
+This is a template of airflow based data orchestration, as my portfolio.
+
+&copy; Ramadhianto 2025
