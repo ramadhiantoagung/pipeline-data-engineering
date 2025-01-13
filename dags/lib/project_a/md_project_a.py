@@ -8,7 +8,7 @@ def fn_proc_00(
     snf_business_case,
     snf_environment
 ):
-    from snowflake.md_snf import def fn_qry
+    from snowflake.md_snf import fn_qry
 
     output = 'task holder start completed'
     print(output)
@@ -25,7 +25,7 @@ def fn_proc_01(
     snf_business_case,
     snf_environment
 ):
-    from snowflake.md_snf import def fn_qry
+    from snowflake.md_snf import fn_qry
 
     output = fn_qry(f"""SHOW WAREHOUSES""")
 
@@ -41,7 +41,7 @@ def fn_proc_02(
     snf_business_case,
     snf_environment
 ):
-    from snowflake.md_snf import def fn_qry
+    from snowflake.md_snf import fn_qry
 
     output = fn_qry(f"""SHOW WAREHOUSES""")
 
@@ -57,7 +57,7 @@ def fn_proc_03(
     snf_business_case,
     snf_environment
 ):
-    from snowflake.md_snf import def fn_qry
+    from snowflake.md_snf import fn_qry
 
     output = fn_qry(f"""SHOW WAREHOUSES""")
 
@@ -79,7 +79,16 @@ def fn_proc_99(
     return output
 
 def main():
-    fn_proc_00()
+    fn_proc_00(
+        'snf_account',
+        'snf_user',
+        'snf_pass',
+        'snf_keypath',
+        'snf_role',
+        'snf_warehouse',
+        'snf_business_case',
+        'snf_environment'
+    )
 
 if __name__ == "__main__":
     main()
